@@ -1,0 +1,43 @@
+<launch>
+
+	<node pkg="ck_gr_a" type="ck_gr_a_node" name="capture_key">
+	</node>
+
+	<group ns="blueTeam">
+		<node pkg="eval_1_gr_a" type="eval_1_gr_a_node" name="leader" clear_params="true">
+		</node>
+
+		<node pkg="eval_1_gr_a" type="vehicle_gr_a" name="follower1" clear_params="true">
+			<param name="rank" type="int" value="1"/>
+		</node>
+
+		<node pkg="eval_1_gr_a" type="vehicle_gr_a" name="follower2" clear_params="true">
+			<param name="rank" type="int" value="2"/>
+		</node>
+	</group>
+
+	<!--second one-->
+
+	<group ns="redTeam">
+		<node pkg="eval_1_gr_a" type="eval_1_gr_a_node" name="leader" clear_params="true">
+			<param name="accel_key" type="int" value="97"/>
+			<param name="decel_key" type="int" value="115"/>
+			<param name="radius" type="int" value="3"/>	
+			<!-- 97 is "a"/ 115 is "s" -->
+
+		</node>
+
+		<node pkg="eval_1_gr_a" type="vehicle_gr_a" name="follower1" clear_params="true">
+			<param name="rank" type="int" value="1"/>
+			<param name="color" type="string" value="red"/>
+			<param name="radius" type="int" value="3"/>	
+		</node>
+
+		<node pkg="eval_1_gr_a" type="vehicle_gr_a" name="follower2" clear_params="true">
+			<param name="rank" type="int" value="2"/>
+			<param name="color" type="string" value="red"/>
+			<param name="radius" type="int" value="3"/>	
+		</node>
+	</group>
+
+</launch>

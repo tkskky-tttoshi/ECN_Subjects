@@ -1,0 +1,12 @@
+<launch>
+	<node pkg="puppet_hand" type="tf_listener" name="tf_listener_node">
+
+	</node>
+
+	<node pkg="puppet_hand" type="tf_broadcaster" name="tf_broadcaster_node">
+
+	</node>
+
+
+</launch>
+

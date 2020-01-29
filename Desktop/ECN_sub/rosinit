@@ -1,0 +1,16 @@
+THe following command has to be used before ros is started.
+source ~/catkin_ws/devel/setup.bash
+
+1. If I use roscore->catkin build->roslaunch "package_name" "launch_filename",
+source ~/ros/src/devel/setup.bash
+is needed
+
+
+2. To open ros bug file
+   1. roscore 2. rqt_bag (name) 3. right click ->plot
+3. to get csv file
+   1.rostopic echo -b (filenam) -p (topicname) > (csvfile name)
+
+4. to run launch file
+   1. roscore 2. source ... 3. roslaunch (packagename) (filename)
+

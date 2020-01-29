@@ -1,0 +1,9 @@
+
+<param name="joint_name" type="string" value="right_s0"/>	
+	<param name="joint_name" type="string" value="right_s1"/>
+
+
+<node> tag is missing required attribute: 'name'. Node xml is <node pkg="move_joint" type="move_joint_node">
+		<param name="joint_name" type="string" value="right_s0"/>	
+	</node>
+The traceback for the exception was written to the log file

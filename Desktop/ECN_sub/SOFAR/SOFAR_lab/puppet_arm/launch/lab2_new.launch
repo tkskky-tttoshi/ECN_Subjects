@@ -1,0 +1,6 @@
+<launch>
+	<node plg="puppet_arm" type="puppet_arm_node" name="puppet_arm_node">
+
+	</node>
+
+</launch>

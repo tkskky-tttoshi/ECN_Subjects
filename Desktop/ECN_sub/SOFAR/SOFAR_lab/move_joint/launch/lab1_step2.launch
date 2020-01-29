@@ -1,0 +1,23 @@
+<launch>
+
+	<group ns="group4">
+		<node pkg="capture_key" type="capture_key_node" name="capture_key">
+
+		</node>
+
+	
+		<node pkg="move_joint" type="move_joint_node" name="right_s0">
+			<param name="joint_name" type="string" value="right_s0"/>	
+			<param name="incr_key" type="int" value="112"/>	
+			<param name="decr_key" type="int" value="109"/>
+		
+		</node>
+	
+		<node pkg="move_joint" type="move_joint_node" name="right_s1">
+			<param name="joint_name" type="string" value="right_s1"/>
+			<param name="incr_key" type="int" value="119" />	
+			<param name="decr_key" type="int" value="120"/>	
+		
+		</node>
+    </group>
+</launch>

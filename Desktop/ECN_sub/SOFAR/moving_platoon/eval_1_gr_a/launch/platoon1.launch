@@ -1,0 +1,20 @@
+<launch>
+
+	<node pkg="ck_gr_a" type="ck_gr_a_node" name="capture_key">
+	</node>
+
+	<node pkg="eval_1_gr_a" type="eval_1_gr_a_node" name="leader" clear_params="true">
+		<remap from="/keystroke" to="/capture_key/the_key_typed"/>		
+	</node>
+		<node pkg="eval_1_gr_a" type="vehicle_gr_a" name="follower1" clear_params="true">
+		<param name="rank" type="int" value="1"/>
+		<remap from="/follower1/leader_angle" to="/leader_angle"/>
+	</node>
+
+	<node pkg="eval_1_gr_a" type="vehicle_gr_a" name="follower2" clear_params="true">
+		<param name="rank" type="int" value="2"/>
+		<remap from="/follower2/leader_angle" to="/leader_angle"/>
+	</node>
+
+	<param name="radius" type="int" value="2"/>
+</launch>

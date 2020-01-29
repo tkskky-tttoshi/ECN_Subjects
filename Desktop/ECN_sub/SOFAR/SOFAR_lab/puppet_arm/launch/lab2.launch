@@ -1,0 +1,77 @@
+<launch>
+
+	<group ns="group4">
+		<node pkg="capture_key" type="capture_key_node" name="capture_key">
+			<remap from="key_hit" to="		
+		</node>
+
+		<node pkg="move_joint" type="move_joint_node" name="left_e0">
+			<param name="joint_name" type="string" value="left_e0"/>
+		</node>
+		
+		<node pkg="move_joint" type="move_joint_node" name="left_e1">
+			<param name="joint_name" type="string" value="left_e1"/>
+		</node>
+		
+		<node pkg="move_joint" type="move_joint_node" name="left_s0">
+			<param name="joint_name" type="string" value="left_s0"/>
+					
+		</node>
+		
+		<node pkg="move_joint" type="move_joint_node" name="left_s1">
+			<param name="joint_name" type="string" value="left_s1"/>
+					
+		</node>
+	
+		<node pkg="move_joint" type="move_joint_node" name="left_w0">
+			<param name="joint_name" type="string" value="left_w0"/>	
+		</node>
+		
+		<node pkg="move_joint" type="move_joint_node" name="left_w1">
+			<param name="joint_name" type="string" value="left_w1"/>	
+		</node>
+		
+		<node pkg="move_joint" type="move_joint_node" name="left_w2">
+			<param name="joint_name" type="string" value="left_w2"/>	
+		</node>
+		
+		
+		<node pkg="move_joint" type="move_joint_node" name="right_e0">
+			<param name="joint_name" type="string" value="right_e0"/>
+		</node>
+		
+		
+		<node pkg="move_joint" type="move_joint_node" name="right_e1">
+			<param name="joint_name" type="string" value="right_e1"/>
+		</node>
+		
+		
+		<node pkg="move_joint" type="move_joint_node" name="right_s0">
+			<param name="joint_name" type="string" value="right_s0"/>	
+		
+		</node>
+		
+		
+		<node pkg="move_joint" type="move_joint_node" name="right_s1">
+			<param name="joint_name" type="string" value="right_s1"/>	
+		
+		</node>
+	
+		<node pkg="move_joint" type="move_joint_node" name="right_w0">
+			<param name="joint_name" type="string" value="right_w0"/>
+		
+		</node>
+		
+		<node pkg="move_joint" type="move_joint_node" name="right_w1">
+			<param name="joint_name" type="string" value="right_w1"/>
+		
+		</node>
+		
+		<node pkg="move_joint" type="move_joint_node" name="right_w2">
+			<param name="joint_name" type="string" value="right_w2"/>
+		
+		</node>			
+		
+	
+    </group>
+</launch>
